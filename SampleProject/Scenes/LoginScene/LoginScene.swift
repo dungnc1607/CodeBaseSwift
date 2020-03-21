@@ -93,18 +93,10 @@ extension LoginScene {
         fieldEmailContainerView.bindViewModel(to: viewModel.fieldEmailViewModel)
         fieldPasswordContainerView.bindViewModel(to: viewModel.fieldPasswordViewModel)
         
-//        buttonLogin.rx.tap
-//        .filter({ [unowned self] in self.viewModel.validateForm()})
-//        .bind(to: viewModel.actionRequestUser.inputs)
-//        .disposed(by: rx.disposeBag)
-        
         buttonLogin.rx.tap
-            .subscribe(onNext: { [unowned self] _ in
-                let googleMapScene = Scene.googleMapScene(GoogleMapViewModel.init())
-                SceneCoordinator.shared
-                    .transition(to: googleMapScene, type: .push)
-            })
-            .disposed(by: rx.disposeBag)
+        .filter({ [unowned self] in self.viewModel.validateForm()})
+        .bind(to: viewModel.actionRequestUser.inputs)
+        .disposed(by: rx.disposeBag)
         
         viewModel.errorRelay
         .asDriver(onErrorJustReturn: nil)

@@ -71,9 +71,9 @@ class LoginViewModel: BaseViewModel {
     
     func onSuccessfullyLogin(with name: String) -> CocoaAction {
         return CocoaAction {
-            let googleMapScene = Scene.googleMapScene(GoogleMapViewModel.init())
+            let homepageScene = Scene.homepageScene(HomePageViewModel.init(with: name))
             return SceneCoordinator.shared
-                .transition(to: googleMapScene, type: .push)
+                .transition(to: homepageScene, type: .push)
                 .asObservable()
                 .map { _ in }
         }

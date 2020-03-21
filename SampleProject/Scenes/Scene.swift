@@ -12,6 +12,4 @@ enum Scene {
     case splashScene(SplashViewModel)
     case loginScene(LoginViewModel)
     case homepageScene(HomePageViewModel)
-    //FIXME: - Test google map
-    case googleMapScene(GoogleMapViewModel)
 }

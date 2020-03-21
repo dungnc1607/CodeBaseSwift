@@ -25,6 +25,4 @@ target 'SampleProject' do
   pod 'DeviceKit', '~> 2.0'
   pod 'RxLocalizer'
   pod 'RxAlamofire'
-  pod 'RxGoogleMaps'
-  pod 'GooglePlaces'
 end

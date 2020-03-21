@@ -54,8 +54,6 @@
 		E603BB1423E9C9B500C37072 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603BB1323E9C9B500C37072 /* DatabaseService.swift */; };
 		E603BB1723E9CCEC00C37072 /* HomePageScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603BB1623E9CCEC00C37072 /* HomePageScene.swift */; };
 		E603BB1923E9CD2800C37072 /* HomePageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603BB1823E9CD2800C37072 /* HomePageViewModel.swift */; };
-		E6440D1A24039E0C00AE3D3B /* GoogleMapScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6440D1924039E0C00AE3D3B /* GoogleMapScene.swift */; };
-		E6440D1C24039E2F00AE3D3B /* GoogleMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6440D1B24039E2F00AE3D3B /* GoogleMapViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -123,8 +121,6 @@
 		E603BB1323E9C9B500C37072 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
 		E603BB1623E9CCEC00C37072 /* HomePageScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageScene.swift; sourceTree = "<group>"; };
 		E603BB1823E9CD2800C37072 /* HomePageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewModel.swift; sourceTree = "<group>"; };
-		E6440D1924039E0C00AE3D3B /* GoogleMapScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapScene.swift; sourceTree = "<group>"; };
-		E6440D1B24039E2F00AE3D3B /* GoogleMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +198,6 @@
 		E603BA9F23E9152100C37072 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				E6440D1824039DE400AE3D3B /* GoogleMap */,
 				E603BB1523E9CCC500C37072 /* HomePageScene */,
 				E603BABB23E92F6D00C37072 /* LoginScene */,
 				E603BAAF23E92B0B00C37072 /* SplashScene */,
@@ -388,15 +383,6 @@
 			path = HomePageScene;
 			sourceTree = "<group>";
 		};
-		E6440D1824039DE400AE3D3B /* GoogleMap */ = {
-			isa = PBXGroup;
-			children = (
-				E6440D1924039E0C00AE3D3B /* GoogleMapScene.swift */,
-				E6440D1B24039E2F00AE3D3B /* GoogleMapViewModel.swift */,
-			);
-			path = GoogleMap;
-			sourceTree = "<group>";
-		};
 		EB8BEA25863DDE9DBC11EB90 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,7 +535,6 @@
 				E603BB0223E9C63400C37072 /* APIEndpoints.swift in Sources */,
 				E603BA9E23E912B400C37072 /* BaseViewModel.swift in Sources */,
 				E603BB1923E9CD2800C37072 /* HomePageViewModel.swift in Sources */,
-				E6440D1C24039E2F00AE3D3B /* GoogleMapViewModel.swift in Sources */,
 				E603BAF223E9B54200C37072 /* FieldValidationType.swift in Sources */,
 				E603BAA723E91A8100C37072 /* SceneCoordinator.swift in Sources */,
 				E603BAF023E9B14D00C37072 /* FieldPasswordViewModel.swift in Sources */,
@@ -559,7 +544,6 @@
 				E603BABF23E9512B00C37072 /* LoginViewModel.swift in Sources */,
 				E603BAFE23E9B87300C37072 /* FieldEmailViewModel.swift in Sources */,
 				E603BADE23E95B8D00C37072 /* UserDefaults+extensions.swift in Sources */,
-				E6440D1A24039E0C00AE3D3B /* GoogleMapScene.swift in Sources */,
 				E603BAA123E9154C00C37072 /* SceneCoordinatorType.swift in Sources */,
 				E603BACD23E957DD00C37072 /* LocalizableService.swift in Sources */,
 				E603BA8923E90D8A00C37072 /* AppDelegate.swift in Sources */,

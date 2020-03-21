@@ -44,11 +44,6 @@ extension Scene {
         let rootNavigationController = BaseNavigationController.init(rootViewController: homePageScene)
         return rootNavigationController
             
-        case .googleMapScene(let viewModel):
-            let googleMapScene = GoogleMapScene.init()
-        googleMapScene.bindViewModel(to: viewModel)
-        return googleMapScene
-            
         }
     }
 }

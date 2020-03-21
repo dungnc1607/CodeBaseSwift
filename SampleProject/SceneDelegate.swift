@@ -22,11 +22,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         SceneCoordinator.shared.window.windowScene = windowScene
         
-//        let loginScene = Scene.loginScene(LoginViewModel.init())
-//        SceneCoordinator.shared.transition(to: loginScene, type: .root)
+        let loginScene = Scene.loginScene(LoginViewModel.init())
+        SceneCoordinator.shared.transition(to: loginScene, type: .root)
         
-//        let googleMapScene = Scene.googleMapScene(GoogleMapViewModel.init())
-//        SceneCoordinator.shared.transition(to: googleMapScene, type: .root)
     }
 
     @available(iOS 13.0, *)

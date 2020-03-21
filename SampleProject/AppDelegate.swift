@@ -7,14 +7,6 @@
 //
 
 import UIKit
-import GoogleMaps
-import GooglePlaces
-
-#if swift(>=4.2)
-    typealias ApplicationLaunchOptionsKey = UIApplication.LaunchOptionsKey
-#else
-    typealias ApplicationLaunchOptionsKey = UIApplicationLaunchOptionsKey
-#endif
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,10 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         SceneCoordinator.shared.window.makeKeyAndVisible()
 
         // Override point for customization after application launch.
-        
-        //Google map API Key
-        GMSServices.provideAPIKey("AIzaSyAk6eIJgRky54WUEaCXifPYDkY1ISFEKdE")
-        GMSPlacesClient.provideAPIKey("AIzaSyAk6eIJgRky54WUEaCXifPYDkY1ISFEKdE")
         
         let loginScene = Scene.loginScene(LoginViewModel.init())
         SceneCoordinator.shared.transition(to: loginScene, type: .root)
