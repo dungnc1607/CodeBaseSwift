@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  SampleProject
+
+  Created by Squall on 2/4/20.
+  Copyright © 2020 Squall. All rights reserved.
+*/
+
+
+//MARK: - English
+
+"Email" = "Email: ";
+"Password" = "Password: ";
+"Field_Email" = "Email";
+"Field_Password" = "Password";
+"Login" = "Login";
+"Show" = "Show";
+"Hide" = "Hide";
+"Welcome_Label" = "Welcome back, %@!";
+
+// MARK: - Validation
+"Validation_Empty" = "*Required";
+"Validation_Error" = "Error";
+"Validation_Password" = "Password must be 8 or more characters";
